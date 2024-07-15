@@ -1,0 +1,133 @@
+
+
+.gallery-type:hover {
+  background-color: rgb(245, 204, 160);
+  color: black;
+}
+#portfolio-gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  margin: 20px 0px;
+
+}
+#portfolio-gallery p::selection{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(107, 36, 12);
+}
+.gallery-img-container {
+  background-color: aliceblue;
+  overflow: hidden;
+  position: relative;
+}
+.gallery-img-container img {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4/3;
+  transition: all 0.5s;
+}
+.gallery-img-container::before {
+  content: "";
+  position: absolute;
+  top: 500px;
+  left: 0px;
+  width: 150%;
+  height: 30px;
+  background-color: rgb(255, 208, 166);
+  mix-blend-mode: overlay;
+  z-index: 2;
+  filter: blur(10px);
+  transform: rotateZ(142deg);
+}
+@keyframes shine {
+  0% {
+    top: -10px;
+    left: -400px;
+    opacity: 1;
+  }
+  50% {
+    top: 130px;
+    left: -80px;
+    
+  }
+  100% {
+    top: 400px;
+    left: 0px;
+    opacity: 0;
+  }
+}
+.gallery-img-container:hover::before {
+  animation: shine 0.5s linear;
+}
+.gallery-img-info {
+  position: absolute;
+  background-color: rgba(245, 204, 160, 0.8);
+  mix-blend-mode: screen;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  bottom: -100px;
+  padding: 20px;
+  z-index: 3;
+  color: rgb(0, 0, 0);
+  transition: all 0.3s;
+}
+.gallery-img-title {
+  font-weight: bolder;
+  font-size: 24px;
+}
+.gallery-img-description {
+  font-size: 18px;
+}
+.gallery-img-container:hover .gallery-img-info {
+  bottom: 0px;
+}
+.gallery-img-container:hover img {
+  transform: scale(1.1) rotateZ(3deg);
+}
+
+.portfolio-video-container {
+  width: 100%;
+  position: relative;
+}
+.portfolio-video-container video {
+  width: 100%;
+}
+.portfolio-video-txt-container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(245, 204, 160, 0.8);
+  /* mix-blend-mode: overlay; */
+  backdrop-filter: blur(10px);
+  padding: 50px 0px;
+  color: rgb(107, 36, 12);
+}
+.portfolio-video-txt-container p {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.portfolio-video-txt-container a {
+    color: rgb(245, 204, 160);
+}
+.brown-buttons {
+  text-decoration: none;
+  background-color: rgb(107, 36, 12);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-top: 10px;
+
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.brown-buttons:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(107, 36, 12);
+}

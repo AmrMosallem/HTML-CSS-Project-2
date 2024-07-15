@@ -1,0 +1,109 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background-color: rgba(245, 204, 160, 0.5);
+}
+body >section{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body::-webkit-scrollbar{
+  width: 15px;
+}
+
+body::-webkit-scrollbar-thumb{ 
+   background-color:   rgb(107, 36, 12);
+   border-radius: 100px;
+}
+
+p {
+  margin: 0px 0px 5px 0px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-32 {
+  font-size: 30px;
+}
+.fs-36 {
+  font-size: 36px;
+}
+.fs-42 {
+  font-size: 42px;
+}
+.fw-bold {
+  font-weight: bold;
+}
+.lh-mid {
+  line-height: 1.5;
+}
+.lh-high {
+  line-height: 2;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mb-40{
+  margin-bottom: 40px;
+}
+.mb-120{
+  margin-bottom: 120px;
+}
+.big-bold-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: bold;
+  color: rgb(107, 36, 12);
+
+  position: relative;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  border-radius: 10px;
+  left: 50%;
+  bottom: -25px;
+  background-color: rgb(107, 36, 12);
+  transform: translateX(-50%);
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: 50%;
+  bottom: -33px;
+  background-color: white;
+
+  border: 2px solid rgb(107, 36, 12);
+  transform: translateX(-50%);
+}
+.section-description {
+  color: gray;
+  line-height: 2;
+  text-align: center;
+  position: relative;
+  margin-bottom: 100px;
+  max-width: 550px;
+}
