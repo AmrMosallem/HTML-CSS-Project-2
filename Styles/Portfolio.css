@@ -109,7 +109,7 @@
   color: rgb(107, 36, 12);
 }
 .portfolio-video-txt-container p {
-  margin-bottom: 15px;
+  margin: 0px 10px 15px 10px ;
   font-weight: bold;
 }
 .portfolio-video-txt-container a {
