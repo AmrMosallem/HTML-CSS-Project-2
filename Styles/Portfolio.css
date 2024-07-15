@@ -59,16 +59,18 @@
 .gallery-img-container:hover::before {
   animation: shine 0.5s linear;
 }
+
 .gallery-img-info {
   position: absolute;
   background-color: rgba(245, 204, 160, 0.8);
   mix-blend-mode: screen;
   backdrop-filter: blur(10px);
   width: 100%;
-  bottom: -100px;
-  padding: 20px;
+  box-sizing: border-box;
+  bottom: -150px;
+  padding: 10px 20px;
   z-index: 3;
-  color: rgb(0, 0, 0);
+  color: #000000;
   transition: all 0.3s;
 }
 .gallery-img-title {
