@@ -1,0 +1,79 @@
+.contact-main-section {
+  display: flex;
+  width: 80%;
+}
+.contact-info-container {
+  padding: 20px;
+  font-size: 18px;
+}
+.contact-info-title {
+  font-weight: bold;
+}
+.contact-input-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 800px;
+  flex: 1;
+}
+.contact-input-container div {
+  display: flex;
+  justify-content: right;
+}
+.contact-input-container input,
+.contact-input-container textarea {
+  outline: none;
+  border: 1px solid rgb(107, 36, 12);
+  padding: 15px;
+  color: rgb(107, 36, 12);
+}
+.contact-input-container input {
+  margin-bottom: 20px;
+}
+
+.contact-bottom-div {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(107, 36, 12,1)), url(../Images/orange\ background\ 4.jpg);
+  background-size: cover;
+  background-position: center;
+ 
+  width: 100%;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: white;
+  font-weight: bold;
+  gap: 20px;
+}
+.contact-bottom-div a {
+  text-decoration: none;
+  color: white;
+}
+.contact-bottom-icons {
+  border-top: 2px solid white;
+  padding: 20px 0px;
+  display: flex;
+  gap: 20px;
+
+}
+.contact-bottom-rights{
+  font-weight: normal;
+  font-size: 14px;
+}
+.contact-bottom-rights i{ 
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-family: "Playwrite DK Loopet", cursive;
+
+}
+@media (max-width: 599px) {
+  .contact-info-container {
+    order: -1;
+  }
+  .contact-main-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}

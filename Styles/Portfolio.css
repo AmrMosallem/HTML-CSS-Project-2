@@ -105,15 +105,17 @@
   background-color: rgba(245, 204, 160, 0.8);
   /* mix-blend-mode: overlay; */
   backdrop-filter: blur(10px);
-  padding: 50px 0px;
-  color: rgb(107, 36, 12);
+  padding: 25px 0px;
+  text-align: center;
+  line-height: 1.2;
 }
 .portfolio-video-txt-container p {
-  margin: 0px 10px 15px 10px ;
+  margin: 0px 10px 10px 10px ;
   font-weight: bold;
+
 }
 .portfolio-video-txt-container a {
-    color: rgb(245, 204, 160);
+    color: rgb(245, 204, 160);  
 }
 .brown-buttons {
   text-decoration: none;
